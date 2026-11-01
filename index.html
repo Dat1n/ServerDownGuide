@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SlothHost Server Help</title>
+<style>
+:root{--bg:#faf8f4;--card:#fff;--text:#1d1b18;--muted:#6b665e;--line:#e6e1d8;--accent:#2f6f4f;--warn:#b4541a;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15140f;--card:#1f1d17;--text:#f1ede4;--muted:#a39d90;--line:#332f26;--accent:#6fc79a;--warn:#f0a06a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#15140f;--card:#1f1d17;--text:#f1ede4;--muted:#a39d90;--line:#332f26;--accent:#6fc79a;--warn:#f0a06a;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:560px;margin:0 auto;padding:20px 16px 40px}
+h1{font-size:24px;margin:8px 0 4px}
+.sub{color:var(--muted);margin:0 0 20px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:14px}
+.step h2{font-size:18px;margin:0 0 6px;display:flex;gap:10px;align-items:center}
+.n{flex:none;width:30px;height:30px;border-radius:50%;background:var(--accent);color:var(--bg);display:grid;place-items:center;font-weight:700;font-size:16px}
+.step p{margin:6px 0}
+.ok{color:var(--accent);font-weight:600}
+.no{color:var(--warn);font-weight:600}
+a.btn{display:block;text-align:center;background:var(--accent);color:var(--bg);text-decoration:none;font-weight:700;padding:12px;border-radius:12px;margin-top:10px}
+.final{border-color:var(--accent)}
+.note{color:var(--muted);font-size:15px}
+</style>
+</head>
+<body>
+<main>
+<h1>Server Down? Follow These Steps</h1>
+<p class="sub">Go in order. Check the website again after every step.</p>
+
+<div class="step">
+<h2><span class="n">1</span>Check the website</h2>
+<p>Open <strong>slothhost.online</strong> on your phone.</p>
+<p><span class="ok">Loads fine?</span> Nothing to do. You're done.</p>
+<p><span class="no">Not loading?</span> Go to Step 2.</p>
+<a class="btn" href="https://slothhost.online" target="_blank" rel="noopener">Open slothhost.online</a>
+</div>
+
+<div class="step">
+<h2><span class="n">2</span>Check the electricity</h2>
+<p>Is the power off in the house or at the server area?</p>
+<p>If yes, turn the power back on (check the distribution board / DB switches too).</p>
+<p class="note">Then check the website again.</p>
+</div>
+
+<div class="step">
+<h2><span class="n">3</span>Check the WiFi / router</h2>
+<p>Is the WiFi router on?</p>
+<p>If it is off, turn it on. Then <strong>wait 2 to 3 minutes</strong> for it to start up.</p>
+<p class="note">Then check the website again.</p>
+</div>
+
+<div class="step">
+<h2><span class="n">4</span>Check the ethernet lights</h2>
+<p>After waiting, look at the router. You should see <strong>2 blue ethernet connection lights</strong>.</p>
+<p><span class="ok">2 blue lights?</span> Good. Check the website.</p>
+<p><span class="no">Only 1 blue light?</span> Go to Step 5.</p>
+</div>
+
+<div class="step">
+<h2><span class="n">5</span>Check the laptop server</h2>
+<p>Go to the laptop server. Is it powered off?</p>
+<p>If yes, turn it back on. Wait a few minutes, then check the website again.</p>
+</div>
+
+<div class="step final">
+<h2><span class="n">&#10003;</span>All 3 checked?</h2>
+<p>Electricity, WiFi, and laptop all on? <strong>The server will fix itself automatically.</strong></p>
+<p>Give it a few minutes, then check <strong>slothhost.online</strong> again.</p>
+<p class="note">Still down after waiting? Contact Haris.</p>
+</div>
+</main>
+</body>
+</html>
